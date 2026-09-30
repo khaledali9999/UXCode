@@ -118,6 +118,13 @@ go(0);
   const cols=qa('.grid > div',rv);
   G(rv,[q('span',rv),q('h2',rv),q('p',rv),...cols],0,.12);
 
+  // FAQ
+  const faq=q('#faq');
+  if(faq){
+    G(faq,[q('.faq2-badge',faq),q('.faq2-h2',faq),q('.faq2-sub',faq)],0,.1);
+    G(faq,[...qa('.faq2-item',faq)],.15,.08,{y:18});
+  }
+
   // Idea CTA
   const c2=q('#start');
   G(c2,[q('.cta2-top',c2),q('.cta2-h',c2),q('.cta2-sub',c2),q('.cta2-btns',c2)],0,.14);
